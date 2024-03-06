@@ -14,6 +14,7 @@ dependencies = [
     "gensim>=4.3.2",
     "torch==2.0.0+cu118",
     "torchtext>=0.15",
+    "transformers>=4.38.2",
 ]
 readme = "README.md"
 requires-python = ">=3.11,<3.12"

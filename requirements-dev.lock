@@ -33,11 +33,18 @@ decorator==5.1.1
 executing==2.0.1
     # via stack-data
 filelock==3.13.1
+    # via huggingface-hub
     # via torch
+    # via transformers
 fonttools==4.49.0
     # via matplotlib
+fsspec==2024.2.0
+    # via huggingface-hub
 gensim==4.3.2
     # via cc6205-assignments
+huggingface-hub==0.21.4
+    # via tokenizers
+    # via transformers
 idna==3.6
     # via requests
 ipykernel==6.29.2
@@ -82,9 +89,12 @@ numpy==1.26.4
     # via scikit-learn
     # via scipy
     # via torchtext
+    # via transformers
 packaging==23.2
+    # via huggingface-hub
     # via ipykernel
     # via matplotlib
+    # via transformers
 pandas==2.2.0
     # via cc6205-assignments
 parso==0.8.3
@@ -111,14 +121,22 @@ pytz==2024.1
     # via pandas
 pywin32==306
     # via jupyter-core
+pyyaml==6.0.1
+    # via huggingface-hub
+    # via transformers
 pyzmq==25.1.2
     # via ipykernel
     # via jupyter-client
 regex==2023.12.25
     # via nltk
+    # via transformers
 requests==2.31.0
+    # via huggingface-hub
     # via torchdata
     # via torchtext
+    # via transformers
+safetensors==0.4.2
+    # via transformers
 scikit-learn==1.4.1.post1
     # via cc6205-assignments
 scipy==1.12.0
@@ -136,6 +154,8 @@ sympy==1.12
     # via torch
 threadpoolctl==3.3.0
     # via scikit-learn
+tokenizers==0.15.2
+    # via transformers
 torch==2.0.0+cu118
     # via cc6205-assignments
     # via torchdata
@@ -148,8 +168,10 @@ tornado==6.4
     # via ipykernel
     # via jupyter-client
 tqdm==4.66.2
+    # via huggingface-hub
     # via nltk
     # via torchtext
+    # via transformers
 traitlets==5.14.1
     # via comm
     # via ipykernel
@@ -157,7 +179,10 @@ traitlets==5.14.1
     # via jupyter-client
     # via jupyter-core
     # via matplotlib-inline
+transformers==4.38.2
+    # via cc6205-assignments
 typing-extensions==4.10.0
+    # via huggingface-hub
     # via torch
 tzdata==2024.1
     # via pandas
