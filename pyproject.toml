@@ -1,0 +1,40 @@
+[project]
+name = "cc6205-assignments"
+version = "0.1.0"
+description = "Conjunto de evaluaciones del curso CC6205"
+authors = [{ name = "EstebanMunoz", email = "estebanmunoz.madrid@gmail.com" }]
+dependencies = [
+    "numpy>=1.24.4",
+    "pandas>=2.0.3",
+    "matplotlib>=3.8.3",
+    "nltk>=3.8.1",
+    "scikit-learn>=1.4.1.post1",
+    "scipy>=1.12.0",
+    "ipykernel>=6.29.2",
+    "gensim>=4.3.2",
+    "torch==2.0.0+cu118",
+    "torchtext>=0.15",
+]
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+
+[project.scripts]
+hello = "cc6205_assignments:hello"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cc6205_assignments"]
+
+[[tool.rye.sources]]
+name = "pytorch-cu118"
+url = "https://download.pytorch.org/whl/cu118"
